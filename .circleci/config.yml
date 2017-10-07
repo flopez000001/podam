@@ -4,7 +4,7 @@ jobs:
      working_directory: ~/podam
 
      docker:
-        - image: circleci/openjdk:8u121-jdk
+        - image: circleci/openjdk:8-jdk
 
      steps:
         - checkout
