@@ -11,7 +11,7 @@ jobs:
   
         - run: 
             name: clean and verify
-            command: mvn clean verify
+            command: mvn -e clean verify
             when: always
 
         - run:
