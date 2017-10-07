@@ -4,14 +4,14 @@ jobs:
      working_directory: ~/podam
 
      docker:
-        - image: circleci/openjdk:8-jdk
+        - image: circleci/openjdk:8u121-jdk
 
      steps:
         - checkout
   
         - run: 
             name: clean and verify
-            command: mvn -e clean verify
+            command: mvn -X clean verify
             when: always
 
         - run:
